@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <title>OMEGA</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="p-3 mb-2 bg-dark text-white">
+    <div class="container mt-0 col-9 text-center">
+        <div class="logo">
+            <img src="/img/Omega-transparent-250x250.png" alt="logo">
+            <h3>GERADOR DE LISTAS OMEGA</h3>
+        </div>
+        <br>
+        <div>
+            <button id="double" class="btn btn-outline-secondary d-grid gap-2 col-4 mx-auto">DOUBLE</button>
+            <button id="crash" class="btn btn-outline-secondary d-grid gap-2 col-4 mx-auto">CRASH</button>
+        </div>
+        <br>
+        <div id="element" style="display: none;" class="input-group mb-3"> 
+           <label class="form-label" aria-label="Default select example">
+            <hr>
+            <form>
+                <div>
+                    <input type="time" id="hora" required value="00:00" class="ip rounded">
+                </div>
+                <br>
+                <span>NUMEROS DE SINAIS: </span><input type="number" id="quantidade"
+                    placeholder="Quantos sianis" class="ip rounded"><br><br>
+                <span>PADRÃO DOS SINAIS: </span><input type="number" id="padrao" placeholder="Digite o padrao" class="ip rounded">
+                <div id="cor" style="display: none;">
+                    
+                    <br>
+                    <span>SELECIONE A COR: </span>
+                    <select id="elecor" class="form-select">
+                        <option value="0" disabled selected>_______________________</option>
+                        <option value="1">🔴⚪</option>
+                        <option value="2">⚫⚪</option>
+                    </select>
+                </div>
+            </form>
+           </label>
+        </div>
+        <br>
+        <div id="divCriar"  class="" style="display: none;">
+            <button id="criar"  class="btn btn-info d-grid gap-2 col-6 mx-auto" type="button">CRIAR</button>
+        </div>
+        <hr style="display: none;" id="hr">
+        <div class="resultado">
+
+        </div>
+        <br>
+        <div id="divCopiar" style="display: none;">
+            <button id="copy" class="btn btn-primary">copy</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
